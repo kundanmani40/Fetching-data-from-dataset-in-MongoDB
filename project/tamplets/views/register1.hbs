@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chromosomes</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatica+SC:400,700|Open+Sans+Condensed:300" rel="stylesheet">
+
+    <link rel ="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        h1, h2 {
+            font-family: 'Amatica SC', cursive;
+            font-weight: 700;
+            text-align: center;
+	    font-size:40px;
+        }
+        p {
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        .header {
+            background-color: skyblue;
+            height: 200px;
+            text-align: center;
+            
+            padding: 1px;
+        }
+        .container div {
+            padding: 1%;
+            box-sizing: border-box;
+            min-height: 500px;
+        }
+        .left-col {
+            background-color: grey;
+            width: 33%;
+            float: left;
+	    height: 900px;
+        }
+	
+		
+        .center-col {
+          background-color: grey;
+            width: 33%;
+            float: right;
+	    height: 900px;
+        }
+
+	.right-col{
+	    background-color: grey;
+            width: 33%;
+            margin : 0 auto;
+	    height: 900px;
+	}
+	
+        .footer {
+            clear: both;
+            font-family: 'Amatica SC', cursive;
+            background-color: skyblue;
+            text-align: center;
+            height: 50px;
+            padding-top: 10px;
+            box-sizing: border-box;
+        }
+	.cancelbtn{
+			button-align: center;
+			}
+    </style>
+</head>
+<body>
+<form action="/register1" method="POST">
+<div class="header">
+    <h1 > Search For Chromosomes</h1>
+    <button type="button" class="cancelbtn" name = "Enter" id = "fus4">Enter</button>							
+</div>
+<div class="container">
+    <div class="left-col">
+	
+        <h2>See Details Of Chromosomes</h2>
+        <div style="text-align:center;">
+       	<button type="button" class="cancelbtn" name = "Enter" id = "fus">Enter</button>
+       	</div>
+	</div>
+    <div class="center-col">
+        <h2>See Maximum And Minimum Value Of Count</h2>
+        <div style="text-align:center;">
+         <button type="button" class="cancelbtn"name= "Enter1" id = "fus2">Enter</button>
+         </div>
+    </div>
+    <div class="right-col">
+        <h2>See The Average Value Of Count </h2>
+        <div style="text-align:center;">
+       <button type="button" class="cancelbtn"name= "Enter2" id = "fus3">Enter</button>
+       </div>
+    </div>
+</div>
+<script>
+document.getElementById('fus').onclick = function(){
+    window.location.href = "indexc";
+  
+    
+}
+document.getElementById('fus2').onclick = function(){
+    window.location.href = "index1";
+}
+document.getElementById('fus3').onclick = function(){
+    window.location.href = "index2";
+}
+document.getElementById('fus4').onclick = function(){
+    window.location.href = "index";
+}
+</script>
+<div class="footer">
+    &copy; All Rights Reserved.
+</div>
+</form>
+</body>
+</html>

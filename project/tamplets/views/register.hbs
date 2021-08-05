@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Chromosomes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel ="stylesheet" href="css/style.css">
+<style>
+body {
+	height : 100%;
+	background : yellow;
+	}
+</style>
+</head>
+<body>
+  {{>navbar}}
+<form action="/register" method="POST">
+
+
+<div class="container-fluid" style="background-color: pink;text-align : center;">
+  <h1>Chromosomes</h1>
+  <p></p>
+  <p></p>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">
+		<p><b>See Details Of Chromosome </b> </p>
+              <button type="button" class="cancelbtn" name = "Enter" id = "fus">Enter</button>
+    </div>
+    <div class="col-sm-4" style="background-color:lavenderblush;">
+	<p><b> See Maximum And Minimum </b> </p>
+             <button type="button" class="cancelbtn"name= "Enter1" id = "fus2">Enter1</button>  
+	</div>
+    <div class="col-sm-4" style="background-color:lavender;">
+		<p><b>See Average  </b> </p>
+    <button type="button" class="cancelbtn"name= "Enter2" id = "fus3">Enter2</button>
+
+		</div>
+  </div>
+</div>
+ <script>
+document.getElementById('fus').onclick = function(){
+    window.location.href = "indexc";
+    
+}
+document.getElementById('fus2').onclick = function(){
+    window.location.href = "index1";
+}
+document.getElementById('fus3').onclick = function(){
+    window.location.href = "index2";
+}
+</script> 
+  
+</form>
+
+
+</body>
+</html>
+
